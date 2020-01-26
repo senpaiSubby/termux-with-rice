@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+rsync -zzarvh ~/.config ~/git/termux-with-rice/data/
+rsync -zzarvh ~/.oh-my-zsh ~/git/termux-with-rice/data/
+rsync -zzarvh ~/.shortcuts ~/git/termux-with-rice/data/
+rsync -zzarvh ~/.termux ~/git/termux-with-rice/data/
+rsync -zzarvh ~/.zshrc ~/git/termux-with-rice/data/.zshrc
+

@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+# Install software
+pkg install neofetch rclone unstable-repo rsync wget git htop ranger neovim nano nodejs python termux-api x11-repo tigervnc openssh -y
+
+# Setup ssh keys
+ssh-keygen
+
+# Setup external storage
+termux-setup-storage
+
+# Neovim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
